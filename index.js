@@ -9,7 +9,7 @@ app.use(express.json())
 app.use(cors())
 app.use("/student",studentRouter)
 
-app.get("/",async(req,res)=>{
+app.get("/",(req,res)=>{
     res.status(200).send({msg:"Health"})
 })
 app.listen(PORT,"0.0.0.0",async()=>{
